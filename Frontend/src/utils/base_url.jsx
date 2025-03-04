@@ -1,1 +1,1 @@
-export const base_url = process.env.REACT_APP_API_URL;
+export const base_url = "https://spark-tree-backend.onrender.com/api/";
