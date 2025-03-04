@@ -1,0 +1,474 @@
+.app-container {
+    display: flex;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+  }
+  
+  /* Mobile Preview Styles */
+  .mobile-preview {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 375px;
+  }
+  
+  .mobile-frame {
+    width: 320px;
+    height: 600px;
+    border: 15px solid #222;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mobile-header {
+    padding: 20px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .avatar-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    font-size: 32px;
+  }
+  
+  .mobile-tabs {
+    display: flex;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 12px;
+    text-align: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .tab.active {
+    color: #27ae60;
+    border-bottom: 2px solid #27ae60;
+  }
+  
+  .mobile-content {
+    padding: 15px;
+    overflow-y: auto;
+    height: calc(100% - 240px);
+  }
+  
+  .links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .link-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+  }
+  
+  .link-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .get-connected-btn {
+    margin-top: 15px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .spark-logo {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  /* Editor Panel Styles */
+  .editor-panel {
+    flex: 2;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .editor-section {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+  }
+  
+  .editor-section:last-child {
+    border-bottom: none;
+  }
+  
+  .editor-section h2 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .profile-editor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .profile-image-selector {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .avatar-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+  }
+  
+  .avatar-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profile-image-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+  }
+  
+  .primary {
+    background-color: #27ae60;
+    color: white;
+    width: 200px;
+    border-radius: 50px solid #27ae60;
+    display: flex;
+    align-items: center;
+  }
+  
+  .primary:hover {
+    background-color: #219653;
+  }
+  
+  .secondary {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  .secondary:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .char-count {
+    align-self: flex-end;
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .links-controls {
+    position: relative;
+  }
+  
+  .add-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .add-button {
+    width: 100%;
+  }
+  
+  .link-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-top: 10px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .link-dropdown h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .input-with-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .input-with-icon input {
+    flex: 1;
+    padding-right: 60px;
+  }
+  
+  .input-with-icon .icon {
+    position: absolute;
+    right: 30px;
+  }
+  
+  .toggle-switch {
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 10px;
+  }
+  
+  .button-group {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+  }
+  
+  .icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .applications {
+    margin-top: 10px;
+  }
+  
+  .applications h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .app-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .app-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .app-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .dropdown-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+  }
+  
+  .banner-preview {
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .background-controls h4 {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  .color-options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .color-option {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+  }
+  
+  .color-option.selected {
+    border-color: #27ae60;
+  }
+  
+  .color-option.brown {
+    background-color: #3E2723;
+  }
+  
+  .color-option.white {
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+  }
+  
+  .color-option.black {
+    background-color: #000000;
+  }
+  
+  .custom-color {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .custom-color input[type="color"] {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .color-input {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .save-section {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .save-button {
+    padding: 10px 30px;
+  }
+
+
+
+
+  .link-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .link-info {
+    background-color: rgba(243, 243, 241, 1);
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: rgba(87, 87, 87, 1);
+  }
+
+  .links-controls {
+    display: flex;
+  }

@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Preahvihear&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+.sidebar-container {
+  width: 20vh;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 1);
+  margin: 25px;
+}
+
+.logo-spark {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.logo-spark h2 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 2%;
+  color: rgba(0, 0, 0, 1);
+}
+
+.links-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.links,
+.appearance,
+.analytics,
+.settings {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.links-sections p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: rgba(103, 103, 103, 1);
+}
